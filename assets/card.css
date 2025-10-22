@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card img {
+  border-radius: 70px 70px 0 0;
+  height: 200px;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  flex-grow: 1;
+  background-color: #fdf6ec;
+  border-radius: 0 0 70px 70px;
+  color: #a52a2a;
+}
+
+.card > div > h3,
+.card > div > p:nth-of-type(1) {
+  margin: 0;
+  display: inline-block;
+}
+.card > div > p:nth-of-type(1) {
+  margin-left: 0.5em;
+}
+
+/* Secondo p allineato a destra */
+.card > div > p:nth-of-type(2) {
+  margin-top: auto;
+  text-align: right;
+}
+
+/*utton*/
+.card button {
+  background-color: #f3b355;
+  color: #a52a2a;
+  border: none;
+  padding: 0.5em 0;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card h3 {
+  font-weight: bold;
+  margin: 0;
+}

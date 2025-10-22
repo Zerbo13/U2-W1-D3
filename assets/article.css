@@ -1,0 +1,73 @@
+/* Reset base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: #fdf6ec;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+main img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 1.5em;
+}
+
+main h1 {
+  color: brown;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  margin-left: 10px;
+}
+
+main p {
+  color: brown;
+  line-height: 1.6;
+  text-align: justify;
+  max-width: 700px;
+}
+
+/* Layout desktop */
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main img {
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  main h1,
+  main p {
+    text-align: left;
+  }
+
+  main h1 {
+    margin-top: 0;
+  }
+
+  main p {
+    margin-top: 1em;
+  }
+
+  main h1,
+  main p {
+    flex: 1;
+  }
+}
